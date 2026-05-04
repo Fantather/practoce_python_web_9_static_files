@@ -1,0 +1,9 @@
+{% extends "_layout.html" %}
+
+{% block contacts_page %}
+    <h1>Contacts</h1>
+
+    {% for c in contacts %}
+        {% include "contact-card.html" with name=c.name surname=c.surname number=c.number%}
+    {% endfor %}
+{% endblock contacts_page %}
