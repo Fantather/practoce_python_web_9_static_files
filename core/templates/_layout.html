@@ -1,0 +1,17 @@
+    {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="{% static "js/index.js" %}"></script>
+    <link rel="icon" href="{% static "favicon.ico" %}" type='image-x.ico'>
+    <title>Document</title>
+</head>
+<body>
+    {% block main_page %}{% endblock main_page %}
+    {% block contacts %} <p>In the Future we will create contacts</p> {% endblock contacts %}
+
+    
+</body>
+</html>
