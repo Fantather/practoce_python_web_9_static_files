@@ -1,0 +1,9 @@
+{% extends "_layout.html" %}
+
+{% block main_page %}
+    <div class="row">
+        {% for n in news %}
+            {% include "news_card.html" with news_id=n.id title=n.title text=n.text image_path=n.static_image_path only%}
+        {% endfor %}
+    </div>
+{% endblock main_page %}

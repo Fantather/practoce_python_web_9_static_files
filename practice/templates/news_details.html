@@ -1,0 +1,12 @@
+{% extends "_layout.html" %}
+{% load static %}
+
+{% block main_page %}
+    <div>
+        <div class="center-align">
+            <img src="{% static image_path %}" alt="Title image" class="responsive-img">
+            <h1>{{title}}</h1>
+        </div>
+        <p>{% lorem 3 p random %}</p>
+    </div>
+{% endblock main_page %}
